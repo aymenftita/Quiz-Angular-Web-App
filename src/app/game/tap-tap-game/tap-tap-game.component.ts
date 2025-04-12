@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tap-tap-game',
   templateUrl: './tap-tap-game.component.html',
-  styleUrls: ['./tap-tap-game.component.scss']
+  styleUrls: ['./tap-tap-game.component.css']
 })
 export class TapTapGameComponent implements OnInit {
   score: number = 0;

@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'admin/quizzes', component: QuizListComponent },
   {path:'auth/quizzeslist',component:QuizListUserComponent},
   {path:'auth/scorelist',component:ScoreListUserComponent},
-  {path:'combatgame',component:CombatGameComponent},
+  {path:'auth/combatgame',component:CombatGameComponent},
   {path:'test/component',component:TestComponent},
 
 ];

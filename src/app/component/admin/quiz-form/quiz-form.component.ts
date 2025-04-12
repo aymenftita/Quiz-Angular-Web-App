@@ -66,7 +66,7 @@ export class QuizFormComponent implements OnInit {
         this.quizService.updateQuizz(quizData).subscribe(
           () => {
             this.isLoading = false;
-            this.router.navigate(['admin/quizzes', this.quizId]);
+            this.router.navigate(['/admin/quizzes', this.quizId]);
           },
           (error) => {
             console.error('Error updating quiz:', error);
@@ -77,7 +77,7 @@ export class QuizFormComponent implements OnInit {
         this.quizService.addQuiz(quizData).subscribe(
           (newQuiz) => {
             this.isLoading = false;
-            this.router.navigate(['admin/quizzes', newQuiz.quizz_id]);
+            this.router.navigate(['/admin/quizzes', newQuiz.quizz_id]);
           },
           (error) => {
             console.error('Error creating quiz:', error);
