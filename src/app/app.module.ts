@@ -19,12 +19,10 @@ import { QuizListUserComponent } from './component/user/quiz-list-user/quiz-list
 import { ScoreListUserComponent } from './component/user/score-list-user/score-list-user.component';
 import { HeaderComponent } from './component/user/header/header.component';
 import { CombatGameComponent } from './game/combat-game/combat-game.component';
-import { TestComponent } from './test/test/test.component';
-import { TapTapGameComponent } from './game/tap-tap-game/tap-tap-game.component';
-
-
-
-
+import { QuizAnalyticsComponent } from './test/test/quiz-analytics.component';
+import { NgChartsModule } from 'ng2-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -38,8 +36,8 @@ import { TapTapGameComponent } from './game/tap-tap-game/tap-tap-game.component'
     ScoreListUserComponent,
     HeaderComponent,
     CombatGameComponent,
-    TestComponent,
-    TapTapGameComponent,
+    QuizAnalyticsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -50,6 +48,10 @@ import { TapTapGameComponent } from './game/tap-tap-game/tap-tap-game.component'
     ReactiveFormsModule,
     RouterModule,
     CommonModule,
+    NgChartsModule,
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

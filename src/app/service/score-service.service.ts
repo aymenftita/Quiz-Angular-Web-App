@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Score } from '../model/score';
@@ -25,5 +25,13 @@ export class ScoreServiceService {
 
     getScoreByUserId(userId: number): Observable<Score[]> {
         return this.http.get<Score[]>(`${this.apiUrl2}/${userId}`);
+      }
+
+      getScoresByDateRange(start: Date, end: Date): Observable<Score[]> {
+        const params = new HttpParams()
+          .set('start', start.toISOString())
+          .set('end', end.toISOString());
+          
+        return this.http.get<Score[]>(`${this.apiUrl}/date-range`, { params });
       }
 }

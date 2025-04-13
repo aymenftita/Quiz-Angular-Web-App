@@ -12,7 +12,7 @@ import { QuizDetailsComponent } from './component/admin/quiz-details/quiz-detail
 import { QuizListUserComponent } from './component/user/quiz-list-user/quiz-list-user.component';
 import { ScoreListUserComponent } from './component/user/score-list-user/score-list-user.component';
 import { CombatGameComponent } from './game/combat-game/combat-game.component';
-import { TestComponent } from './test/test/test.component';
+import { QuizAnalyticsComponent } from './test/test/quiz-analytics.component';
 
 
 const routes: Routes = [
@@ -30,7 +30,7 @@ const routes: Routes = [
   {path:'auth/quizzeslist',component:QuizListUserComponent},
   {path:'auth/scorelist',component:ScoreListUserComponent},
   {path:'auth/combatgame',component:CombatGameComponent},
-  {path:'test/component',component:TestComponent},
+  {path:'test/component',component:QuizAnalyticsComponent},
 
 ];
 
