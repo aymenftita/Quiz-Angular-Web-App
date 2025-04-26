@@ -12,7 +12,15 @@ import { QuizDetailsComponent } from './component/admin/quiz-details/quiz-detail
 import { QuizListUserComponent } from './component/user/quiz-list-user/quiz-list-user.component';
 import { ScoreListUserComponent } from './component/user/score-list-user/score-list-user.component';
 import { CombatGameComponent } from './game/combat-game/combat-game.component';
-import { QuizAnalyticsComponent } from './test/test/quiz-analytics.component';
+import { VisualisationComponent } from './component/admin/visualisation/visualisation.component';
+import { TestComponent } from './component/admin/test/test.component';
+import { QuestionResponseComponent } from './component/admin/question-response/question-response.component';
+import { SlidingPuzzleComponent } from './game/sliding-puzzle/sliding-puzzle.component';
+import { TakeTestComponent } from './component/user/take-test/take-test.component';
+import { TestListComponent } from './component/user/test-list/test-list.component';
+
+
+
 
 
 const routes: Routes = [
@@ -25,12 +33,17 @@ const routes: Routes = [
   { path: 'admin/quizzes/:quizId/questions/:questionId/edit', component: QuestionFormComponent },
   { path: 'admin/quizzes/:quizId/questions/:questionId/choices/new', component: ChoiceFormComponent },
   { path: 'admin/quizzes/:quizId/questions/:questionId/choices/:choiceId/edit', component: ChoiceFormComponent },
+  {path:'admin/visualisation',component:VisualisationComponent},
   {path: 'auth/test/:id',component: QuizTestComponent},
   { path: 'admin/quizzes', component: QuizListComponent },
   {path:'auth/quizzeslist',component:QuizListUserComponent},
   {path:'auth/scorelist',component:ScoreListUserComponent},
   {path:'auth/combatgame',component:CombatGameComponent},
-  {path:'test/component',component:QuizAnalyticsComponent},
+  {path:'admin/tests',component:TestComponent},
+  { path: 'admin/question-responses', component: QuestionResponseComponent },
+  {path:'slide',component:SlidingPuzzleComponent},
+  {path:'auth/taketest/:id',component:TakeTestComponent},
+  {path:'testlist',component:TestListComponent}
 
 ];
 

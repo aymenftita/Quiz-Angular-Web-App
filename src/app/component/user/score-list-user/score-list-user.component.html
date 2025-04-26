@@ -32,8 +32,7 @@
             <th>{{score.name}} </th>
             <th>{{score.score_type}} </th>
             <th>{{score.result}}<span *ngIf="score.score_type =='Quiz'" > %</span></th>
-            <td>{{score.date}} </td>
-            
+            <td>{{score.date | date:"EEEE,MMMM,HH" }} </td>
           </tr>
           
         </tbody>

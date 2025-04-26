@@ -19,10 +19,19 @@ import { QuizListUserComponent } from './component/user/quiz-list-user/quiz-list
 import { ScoreListUserComponent } from './component/user/score-list-user/score-list-user.component';
 import { HeaderComponent } from './component/user/header/header.component';
 import { CombatGameComponent } from './game/combat-game/combat-game.component';
-import { QuizAnalyticsComponent } from './test/test/quiz-analytics.component';
 import { NgChartsModule } from 'ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { VisualisationComponent } from './component/admin/visualisation/visualisation.component';
+import { TestComponent } from './component/admin/test/test.component';
+import { QuestionResponseComponent } from './component/admin/question-response/question-response.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SlidingPuzzleComponent } from './game/sliding-puzzle/sliding-puzzle.component';
+import { TakeTestComponent } from './component/user/take-test/take-test.component';
+import { TestListComponent } from './component/user/test-list/test-list.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -36,7 +45,15 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ScoreListUserComponent,
     HeaderComponent,
     CombatGameComponent,
-    QuizAnalyticsComponent,
+    VisualisationComponent,
+    TestComponent,
+    QuestionResponseComponent,
+    SlidingPuzzleComponent,
+    TakeTestComponent,
+    TestListComponent,
+    
+
+
     
   ],
   imports: [
@@ -50,7 +67,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     CommonModule,
     NgChartsModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NgbModule
+    
 
   ],
   providers: [],

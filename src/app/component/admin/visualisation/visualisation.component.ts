@@ -1,17 +1,17 @@
 // quiz-analytics.component.ts
 import { Component, OnInit } from '@angular/core';
-import { QuizzServiceService } from '../../service/quizz-service.service';
-import { QuestionServiceService } from '../../service/question-service.service';
+import { QuizzServiceService } from '../../../service/quizz-service.service';
+import { QuestionServiceService } from '../../../service/question-service.service';
 import { ChoiceServiceService } from 'src/app/service/choice-service.service';
 import { ChartConfiguration, ChartType } from 'chart.js';
 import { NgChartsModule } from 'ng2-charts';
 
 @Component({
-  selector: 'app-quiz-analytics',
-  templateUrl: './quiz-analytics.component.html',
-  styleUrls: ['./quiz-analytics.component.css']
+  selector: 'app-visualisation',
+  templateUrl: './visualisation.component.html',
+  styleUrls: ['./visualisation.component.css']
 })
-export class QuizAnalyticsComponent implements OnInit {
+export class VisualisationComponent implements OnInit {
   loading = true;
   activeTab: 'quizzes' | 'questions' | 'choices' = 'quizzes';
   

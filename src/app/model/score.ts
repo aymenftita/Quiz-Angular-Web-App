@@ -14,7 +14,6 @@ export class Score {
       this.result = data.result || undefined;
       this.score_type = data.score_type ;
       this.name = data.name || '';
-      
     }
   }
   
